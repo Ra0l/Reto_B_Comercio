@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>UIApplicationSceneManifest</key>
+	<dict>
+		<key>UIApplicationSupportsMultipleScenes</key>
+		<false/>
+		<key>UISceneConfigurations</key>
+		<dict>
+			<key>UIWindowSceneSessionRoleApplication</key>
+			<array>
+				<dict>
+					<key>UISceneConfigurationName</key>
+					<string>Default Configuration</string>
+					<key>UISceneDelegateClassName</key>
+					<string>$(PRODUCT_MODULE_NAME).SceneDelegate</string>
+					<key>UISceneStoryboardFile</key>
+					<string>Login</string>
+				</dict>
+			</array>
+		</dict>
+	</dict>
+	<key>UIAppFonts</key>
+	<array>
+		<string></string>
+	</array>
+	<key>Item0</key>
+	<string>Roboto-Black.ttf</string>
+	<key>Item1</key>
+	<string>Roboto-BlackItalic.ttf</string>
+	<key>Item2</key>
+	<string>Roboto-Bold.ttf</string>
+	<key>Item3</key>
+	<string>Roboto-BoldItalic.ttf</string>
+	<key>Item4</key>
+	<string>Roboto-Italic.ttf</string>
+	<key>Item5</key>
+	<string>Roboto-Light.ttf</string>
+	<key>Item6</key>
+	<string>Roboto-LightItalic.ttf</string>
+	<key>Itme7</key>
+	<string>Roboto-Medium.ttf</string>
+	<key>Item8</key>
+	<string>Roboto-MediumItalic.ttf</string>
+	<key>Item9</key>
+	<string>Roboto-Regular.ttf</string>
+	<key>Item10</key>
+	<string>Roboto-Thin.ttf</string>
+	<key>Item11</key>
+	<string>Roboto-ThinItalic.ttf</string>
+</dict>
+</plist>
