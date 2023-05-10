@@ -6,3 +6,8 @@
 //
 
 import Foundation
+
+struct UserResponse : Decodable {
+    
+    let userResponse: [AllUser]?
+}

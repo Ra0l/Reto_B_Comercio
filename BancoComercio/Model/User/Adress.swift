@@ -9,7 +9,7 @@ import Foundation
 
 struct Adress: Decodable {
     let street: String
-    let suit: String
+    let suite: String
     let city: String
     let zipcode: String
 }

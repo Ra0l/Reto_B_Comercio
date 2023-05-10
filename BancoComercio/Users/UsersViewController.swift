@@ -7,23 +7,42 @@
 
 import UIKit
 
-class UsersViewController: UIViewController {
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
+class UsersViewController: UIViewController, ListUsersAdapterViewController {
+    
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBOutlet weak var tlbUsers: UITableView!
+    
+    lazy private var listUserAdapter : UserAdapter = {
+        UserAdapter(controller: self)
+    }()
+    
+    lazy private var presenter : UserPresenter = {
+       UserPresenter(controller: self)
+    }()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.presenter.didLoad()
     }
-    */
+    
+}
 
+
+extension UsersViewController {
+    
+    func initAdapters() {
+        self.listUserAdapter.initAdapterWidthTableView(self.tlbUsers)
+    }
+    
+    
+    func didSelectUser(_ objUser: AllUser) {
+        
+    }
+    
+    func reloadData(_ arrayData: [Any]) {
+        self.listUserAdapter.arrayData = arrayData
+        self.tlbUsers.reloadData()
+    }
 }
