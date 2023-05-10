@@ -25,6 +25,7 @@ struct LoginModel {
                     errorHandler("Ocurrio un error insperado. Intentalo de nuevo.")
                     return
                 }
+                UserDefaults.standard.set(true, forKey: "session")
                 completionHandler(loginResponse)
             }
         }
