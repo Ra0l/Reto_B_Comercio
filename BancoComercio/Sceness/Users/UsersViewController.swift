@@ -31,10 +31,15 @@ class UsersViewController: UIViewController, ListUsersAdapterViewController {
         self.presenter.prepare(for: segue, sender: sender)
     }
     
+    @IBAction func btnLogout(_ sender: Any) {
+        
+    }
 }
 
 
 extension UsersViewController {
+    
+    
     
     func initAdapters() {
         self.listUserAdapter.initAdapterWidthTableView(self.tlbUsers)

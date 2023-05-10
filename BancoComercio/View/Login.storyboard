@@ -26,16 +26,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="28G-P5-d5A">
-                                <rect key="frame" x="16" y="99" width="377" height="56.333333333333343"/>
+                                <rect key="frame" x="16" y="99" width="377" height="55.666666666666657"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aeP-IA-vFc">
-                                        <rect key="frame" x="0.0" y="0.0" width="377" height="19"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="377" height="18.666666666666668"/>
                                         <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Inicia Sesión" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mcQ-YY-DVc">
-                                        <rect key="frame" x="0.0" y="21.000000000000004" width="377" height="35.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="20.666666666666671" width="377" height="35"/>
                                         <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="30"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -43,9 +43,9 @@
                                 </subviews>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="JHn-L3-sUA">
-                                <rect key="frame" x="16" y="185.33333333333334" width="361" height="110.00000000000003"/>
+                                <rect key="frame" x="16" y="184.66666666666666" width="361" height="109.99999999999997"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo Electronico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u6V-2A-Vjb" customClass="EmailTextField" customModule="BancoComercio" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="r@gmail.com" borderStyle="roundedRect" placeholder="Correo Electronico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="u6V-2A-Vjb" customClass="EmailTextField" customModule="BancoComercio" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="361" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="ol7-9a-K9u"/>
@@ -64,7 +64,7 @@
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vNE-hf-USP" customClass="PasswordTextField" customModule="BancoComercio" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="1234" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vNE-hf-USP" customClass="PasswordTextField" customModule="BancoComercio" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="60" width="361" height="50"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="50" id="kK4-1M-ji6"/>
@@ -86,13 +86,13 @@
                                 </subviews>
                             </stackView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Olvidaste tu contraseña?" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J2D-v6-H5s">
-                                <rect key="frame" x="16" y="300.33333333333331" width="361" height="19"/>
+                                <rect key="frame" x="16" y="299.66666666666669" width="361" height="18.666666666666686"/>
                                 <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="xE5-UY-uvo">
-                                <rect key="frame" x="16" y="339.33333333333331" width="361" height="31"/>
+                                <rect key="frame" x="16" y="338.33333333333331" width="361" height="31"/>
                                 <subviews>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wbs-w4-pza">
                                         <rect key="frame" x="0.0" y="0.0" width="51" height="31"/>
@@ -115,6 +115,9 @@
                                 <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Ingresar"/>
+                                <connections>
+                                    <action selector="btnLogin:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="95w-vy-60t"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
@@ -137,6 +140,11 @@
                             <constraint firstItem="xE5-UY-uvo" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" constant="16" id="yiS-Pm-vqS"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="swtRememeberEmail" destination="wbs-w4-pza" id="ex4-jQ-xAJ"/>
+                        <outlet property="txtEmail" destination="u6V-2A-Vjb" id="wob-eD-iHw"/>
+                        <outlet property="txtPassword" destination="vNE-hf-USP" id="joG-uT-MKc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -146,6 +154,12 @@
     <designables>
         <designable name="bfS-6S-aJ7">
             <size key="intrinsicContentSize" width="65" height="32"/>
+        </designable>
+        <designable name="u6V-2A-Vjb">
+            <size key="intrinsicContentSize" width="113" height="34"/>
+        </designable>
+        <designable name="vNE-hf-USP">
+            <size key="intrinsicContentSize" width="102.33333333333333" height="34"/>
         </designable>
     </designables>
     <resources>

@@ -17,24 +17,54 @@
         <!--Users-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
-                <viewController id="Y6W-OH-hqX" customClass="UsersViewController" customModule="BancoComercio" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MainSB" id="Y6W-OH-hqX" customClass="UsersViewController" customModule="BancoComercio" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="KPz-gi-Oq7">
-                                <rect key="frame" x="0.0" y="103" width="393" height="749"/>
+                                <rect key="frame" x="0.0" y="153" width="393" height="699"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <sections/>
                             </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JFq-pf-ZvC">
+                                <rect key="frame" x="0.0" y="103" width="393" height="50"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bienvenido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PPo-3k-svV">
+                                        <rect key="frame" x="10" y="13.33333333333333" width="100" height="23.666666666666671"/>
+                                        <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BRQ-fK-jrg">
+                                        <rect key="frame" x="252" y="7.6666666666666714" width="136" height="35"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Cerrar Sessión"/>
+                                        <connections>
+                                            <action selector="btnLogout:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="wQx-4J-DsI"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="PPo-3k-svV" firstAttribute="leading" secondItem="JFq-pf-ZvC" secondAttribute="leading" constant="10" id="GhK-3b-7jT"/>
+                                    <constraint firstAttribute="height" constant="50" id="Jz5-EY-eoG"/>
+                                    <constraint firstAttribute="trailing" secondItem="BRQ-fK-jrg" secondAttribute="trailing" constant="5" id="N3J-8o-U48"/>
+                                    <constraint firstItem="PPo-3k-svV" firstAttribute="centerY" secondItem="JFq-pf-ZvC" secondAttribute="centerY" id="Z8m-Kb-YIE"/>
+                                    <constraint firstItem="BRQ-fK-jrg" firstAttribute="centerY" secondItem="PPo-3k-svV" secondAttribute="centerY" id="azC-yc-fEe"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="KPz-gi-Oq7" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="e70-fu-i73"/>
+                            <constraint firstItem="JFq-pf-ZvC" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="4hT-GA-Po0"/>
+                            <constraint firstItem="KPz-gi-Oq7" firstAttribute="top" secondItem="JFq-pf-ZvC" secondAttribute="bottom" id="7M1-gF-A61"/>
+                            <constraint firstItem="JFq-pf-ZvC" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Imk-ZL-RfG"/>
                             <constraint firstItem="KPz-gi-Oq7" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="f3Y-dN-7tJ"/>
                             <constraint firstItem="KPz-gi-Oq7" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="hkA-ii-HFa"/>
                             <constraint firstAttribute="bottom" secondItem="KPz-gi-Oq7" secondAttribute="bottom" id="v2n-ss-hGa"/>
+                            <constraint firstItem="JFq-pf-ZvC" firstAttribute="trailing" secondItem="vDu-zF-Fre" secondAttribute="trailing" id="xw8-ql-oZG"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Users" id="FKc-p1-3zV"/>

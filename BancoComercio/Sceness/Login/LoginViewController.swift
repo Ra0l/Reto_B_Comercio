@@ -9,21 +9,31 @@ import UIKit
 
 class LoginViewController: UIViewController {
 
+    @IBOutlet weak var txtEmail: EmailTextField!
+    @IBOutlet weak var txtPassword: PasswordTextField!
+    @IBOutlet weak var swtRememeberEmail: UISwitch!
+    
+    lazy private var presenter: LoginPresenter = {
+       LoginPresenter(controller: self)
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
     
 
-    /*
-    // MARK: - Navigation
+}
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+extension LoginViewController {
+    @IBAction func btnLogin(_ sender: Any) {
+        self.presenter.doLoginWithEmail(self.txtEmail.text, password: self.txtPassword.text)
     }
-    */
-
+    
+    func goToHome() {
+        let storyboard = UIStoryboard(name: "Users", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "MainSB")
+        controller.modalPresentationStyle = .fullScreen
+        self.present(controller, animated: true)
+    }
 }

@@ -28,6 +28,8 @@
 		F7713CFD2A0BEBE30043D8BE /* PostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7713CFC2A0BEBE30043D8BE /* PostPresenter.swift */; };
 		F7713D012A0BF1BD0043D8BE /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7713CFF2A0BF1BD0043D8BE /* PostTableViewCell.swift */; };
 		F7713D022A0BF1BD0043D8BE /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7713D002A0BF1BD0043D8BE /* PostTableViewCell.xib */; };
+		F7713D042A0C01690043D8BE /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7713D032A0C01690043D8BE /* LoginResponse.swift */; };
+		F7713D062A0C04EF0043D8BE /* AlertManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7713D052A0C04EF0043D8BE /* AlertManager.swift */; };
 		F78F5CA62A0AE2B000053F86 /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = F78F5CA52A0AE2B000053F86 /* ProgressHUD */; };
 		F7C9530D2A097A7A00B18570 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C9530C2A097A7A00B18570 /* AppDelegate.swift */; };
 		F7C9530F2A097A7A00B18570 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C9530E2A097A7A00B18570 /* SceneDelegate.swift */; };
@@ -132,6 +134,8 @@
 		F7713CFC2A0BEBE30043D8BE /* PostPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPresenter.swift; sourceTree = "<group>"; };
 		F7713CFF2A0BF1BD0043D8BE /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
 		F7713D002A0BF1BD0043D8BE /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		F7713D032A0C01690043D8BE /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
+		F7713D052A0C04EF0043D8BE /* AlertManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertManager.swift; sourceTree = "<group>"; };
 		F7C953092A097A7A00B18570 /* BancoComercio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BancoComercio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7C9530C2A097A7A00B18570 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7C9530E2A097A7A00B18570 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -218,6 +222,7 @@
 			children = (
 				F73847A92A0ACE360059409D /* Post */,
 				F73847A62A0ACD450059409D /* User */,
+				F7713D032A0C01690043D8BE /* LoginResponse.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -281,6 +286,7 @@
 		F7713CF82A0BE98A0043D8BE /* View */ = {
 			isa = PBXGroup;
 			children = (
+				F7C9537B2A0999C000B18570 /* Login.storyboard */,
 				F738479F2A0AC9240059409D /* Users.storyboard */,
 			);
 			path = View;
@@ -366,7 +372,6 @@
 			isa = PBXGroup;
 			children = (
 				F7C953792A0999B500B18570 /* LoginViewController.swift */,
-				F7C9537B2A0999C000B18570 /* Login.storyboard */,
 				F7348FEF2A09B02F0012A14E /* LoginModel.swift */,
 				F7348FF12A09B0390012A14E /* Login Presenter.swift */,
 			);
@@ -377,6 +382,7 @@
 			isa = PBXGroup;
 			children = (
 				F7C9533E2A09995800B18570 /* CustomUI */,
+				F7713D052A0C04EF0043D8BE /* AlertManager.swift */,
 			);
 			path = DesignSystem;
 			sourceTree = "<group>";
@@ -633,6 +639,7 @@
 				F7713CFD2A0BEBE30043D8BE /* PostPresenter.swift in Sources */,
 				F7C953762A09995900B18570 /* ContentView.swift in Sources */,
 				F73847AF2A0AD00C0059409D /* PostResponse.swift in Sources */,
+				F7713D062A0C04EF0043D8BE /* AlertManager.swift in Sources */,
 				F7C953732A09995900B18570 /* AMLabel.swift in Sources */,
 				F7C9536A2A09995900B18570 /* AMShadow.swift in Sources */,
 				F7C953112A097A7A00B18570 /* ViewController.swift in Sources */,
@@ -659,6 +666,7 @@
 				F73847A52A0ACD410059409D /* Adress.swift in Sources */,
 				F7C953552A09995800B18570 /* ActionButton.swift in Sources */,
 				F7C9536D2A09995900B18570 /* AMBorder.swift in Sources */,
+				F7713D042A0C01690043D8BE /* LoginResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
