@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ProgressHUD
 
 class UsersViewController: UIViewController, ListUsersAdapterViewController {
     
@@ -25,6 +26,7 @@ class UsersViewController: UIViewController, ListUsersAdapterViewController {
         super.viewDidLoad()
         self.tlbUsers.register(UINib(nibName: "UserTableViewCell", bundle: nil), forCellReuseIdentifier: "UserTableViewCell")
         self.presenter.didLoad()
+        self.createTimer()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -32,12 +34,30 @@ class UsersViewController: UIViewController, ListUsersAdapterViewController {
     }
     
     @IBAction func btnLogout(_ sender: Any) {
-        
+        self.logout()
+    }
+    
+    func logout() {
+        ProgressHUD.show("Cerrando sessión")
+            self.dismiss(animated: true)
+        ProgressHUD.dismiss()
     }
 }
 
 
 extension UsersViewController {
+    
+    func createTimer() {
+        let timer = Timer.scheduledTimer(timeInterval: 15,
+                                         target: self,
+                                         selector: #selector(fireTimer),
+                                         userInfo: nil,
+                                         repeats: true)
+    }
+    
+    @objc func fireTimer() {
+        self.logout()
+    }
     
     
     

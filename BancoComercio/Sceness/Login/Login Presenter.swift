@@ -10,6 +10,8 @@ import ProgressHUD
 
 struct LoginPresenter {
     
+    let defaults = UserDefaults.standard
+    
     private unowned let controller: LoginViewController
     private let loginModel = LoginModel()
     
@@ -32,7 +34,8 @@ struct LoginPresenter {
         ProgressHUD.show("Ingresando")
         
         self.loginModel.doLoginWithUser(email, password: password) { loginResponse in
-            
+            let token = loginResponse.token
+            self.defaults.set(token, forKey: "session")
             ProgressHUD.dismiss()
             self.controller.goToHome()
         } errorHandler: { error in
