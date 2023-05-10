@@ -24,6 +24,10 @@
 		F73847B92A0AD9790059409D /* UserAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73847B82A0AD9790059409D /* UserAdapter.swift */; };
 		F7713CF52A0BDD6B0043D8BE /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7713CF32A0BDD6B0043D8BE /* UserTableViewCell.swift */; };
 		F7713CF62A0BDD6B0043D8BE /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7713CF42A0BDD6B0043D8BE /* UserTableViewCell.xib */; };
+		F7713CFB2A0BE9E50043D8BE /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7713CFA2A0BE9E50043D8BE /* PostViewController.swift */; };
+		F7713CFD2A0BEBE30043D8BE /* PostPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7713CFC2A0BEBE30043D8BE /* PostPresenter.swift */; };
+		F7713D012A0BF1BD0043D8BE /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7713CFF2A0BF1BD0043D8BE /* PostTableViewCell.swift */; };
+		F7713D022A0BF1BD0043D8BE /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7713D002A0BF1BD0043D8BE /* PostTableViewCell.xib */; };
 		F78F5CA62A0AE2B000053F86 /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = F78F5CA52A0AE2B000053F86 /* ProgressHUD */; };
 		F7C9530D2A097A7A00B18570 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C9530C2A097A7A00B18570 /* AppDelegate.swift */; };
 		F7C9530F2A097A7A00B18570 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C9530E2A097A7A00B18570 /* SceneDelegate.swift */; };
@@ -124,6 +128,10 @@
 		F73847B82A0AD9790059409D /* UserAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAdapter.swift; sourceTree = "<group>"; };
 		F7713CF32A0BDD6B0043D8BE /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
 		F7713CF42A0BDD6B0043D8BE /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
+		F7713CFA2A0BE9E50043D8BE /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		F7713CFC2A0BEBE30043D8BE /* PostPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostPresenter.swift; sourceTree = "<group>"; };
+		F7713CFF2A0BF1BD0043D8BE /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		F7713D002A0BF1BD0043D8BE /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		F7C953092A097A7A00B18570 /* BancoComercio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BancoComercio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7C9530C2A097A7A00B18570 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7C9530E2A097A7A00B18570 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -197,11 +205,10 @@
 		F738479C2A0AC8F30059409D /* Users */ = {
 			isa = PBXGroup;
 			children = (
+				F738479D2A0AC9090059409D /* UsersViewController.swift */,
 				F7713CF22A0BDD490043D8BE /* CustomView */,
 				F73847B72A0AD9690059409D /* Adapter */,
 				F73847B52A0AD66C0059409D /* UserPresenter.swift */,
-				F738479D2A0AC9090059409D /* UsersViewController.swift */,
-				F738479F2A0AC9240059409D /* Users.storyboard */,
 			);
 			path = Users;
 			sourceTree = "<group>";
@@ -261,6 +268,43 @@
 			path = CustomView;
 			sourceTree = "<group>";
 		};
+		F7713CF72A0BE9690043D8BE /* Sceness */ = {
+			isa = PBXGroup;
+			children = (
+				F7713CF92A0BE9B40043D8BE /* Post */,
+				F738479C2A0AC8F30059409D /* Users */,
+				F7C9533C2A0985FE00B18570 /* Login */,
+			);
+			path = Sceness;
+			sourceTree = "<group>";
+		};
+		F7713CF82A0BE98A0043D8BE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F738479F2A0AC9240059409D /* Users.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F7713CF92A0BE9B40043D8BE /* Post */ = {
+			isa = PBXGroup;
+			children = (
+				F7713CFE2A0BF1790043D8BE /* CustomView */,
+				F7713CFA2A0BE9E50043D8BE /* PostViewController.swift */,
+				F7713CFC2A0BEBE30043D8BE /* PostPresenter.swift */,
+			);
+			path = Post;
+			sourceTree = "<group>";
+		};
+		F7713CFE2A0BF1790043D8BE /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				F7713CFF2A0BF1BD0043D8BE /* PostTableViewCell.swift */,
+				F7713D002A0BF1BD0043D8BE /* PostTableViewCell.xib */,
+			);
+			path = CustomView;
+			sourceTree = "<group>";
+		};
 		F7C953002A097A7A00B18570 = {
 			isa = PBXGroup;
 			children = (
@@ -284,12 +328,12 @@
 		F7C9530B2A097A7A00B18570 /* BancoComercio */ = {
 			isa = PBXGroup;
 			children = (
-				F73847B02A0AD2180059409D /* Networking */,
-				F73847A12A0ACCD00059409D /* Model */,
-				F738479C2A0AC8F30059409D /* Users */,
 				F7C9537D2A099A7600B18570 /* Resources */,
 				F7C9533D2A09995800B18570 /* DesignSystem */,
-				F7C9533C2A0985FE00B18570 /* Login */,
+				F7713CF82A0BE98A0043D8BE /* View */,
+				F7713CF72A0BE9690043D8BE /* Sceness */,
+				F73847B02A0AD2180059409D /* Networking */,
+				F73847A12A0ACCD00059409D /* Model */,
 				F7C9530C2A097A7A00B18570 /* AppDelegate.swift */,
 				F7C9530E2A097A7A00B18570 /* SceneDelegate.swift */,
 				F7C953102A097A7A00B18570 /* ViewController.swift */,
@@ -548,6 +592,7 @@
 				F7C9538D2A099A8500B18570 /* Roboto-Bold.ttf in Resources */,
 				F7C9537C2A0999C000B18570 /* Login.storyboard in Resources */,
 				F7C9538C2A099A8500B18570 /* Roboto-BlackItalic.ttf in Resources */,
+				F7713D022A0BF1BD0043D8BE /* PostTableViewCell.xib in Resources */,
 				F7C953192A097A7C00B18570 /* LaunchScreen.storyboard in Resources */,
 				F7C9538B2A099A8500B18570 /* Roboto-Regular.ttf in Resources */,
 				F7C953972A099A8500B18570 /* Roboto-Light.ttf in Resources */,
@@ -585,6 +630,7 @@
 				F7C953702A09995900B18570 /* AMTextField.swift in Sources */,
 				F7348FF22A09B0390012A14E /* Login Presenter.swift in Sources */,
 				F73847B92A0AD9790059409D /* UserAdapter.swift in Sources */,
+				F7713CFD2A0BEBE30043D8BE /* PostPresenter.swift in Sources */,
 				F7C953762A09995900B18570 /* ContentView.swift in Sources */,
 				F73847AF2A0AD00C0059409D /* PostResponse.swift in Sources */,
 				F7C953732A09995900B18570 /* AMLabel.swift in Sources */,
@@ -598,12 +644,14 @@
 				F7C953522A09995800B18570 /* AMButton.swift in Sources */,
 				F7C953672A09995900B18570 /* AMShape.swift in Sources */,
 				F7C9535B2A09995900B18570 /* GenericTextField.swift in Sources */,
+				F7713D012A0BF1BD0043D8BE /* PostTableViewCell.swift in Sources */,
 				F7348FF02A09B02F0012A14E /* LoginModel.swift in Sources */,
 				F7713CF52A0BDD6B0043D8BE /* UserTableViewCell.swift in Sources */,
 				F73847AB2A0ACE5A0059409D /* AllPost.swift in Sources */,
 				F73847B62A0AD66C0059409D /* UserPresenter.swift in Sources */,
 				F7C9537A2A0999B500B18570 /* LoginViewController.swift in Sources */,
 				F7C953642A09995900B18570 /* AMView.swift in Sources */,
+				F7713CFB2A0BE9E50043D8BE /* PostViewController.swift in Sources */,
 				F738479E2A0AC9090059409D /* UsersViewController.swift in Sources */,
 				F73847A82A0ACDDF0059409D /* Company.swift in Sources */,
 				F73847A32A0ACD000059409D /* AllUser.swift in Sources */,

@@ -7,7 +7,7 @@
 
 typealias ErrorHandler = (_ error: String) -> Void
 typealias UsersResponseHandler = (_ objectsUsers: [AllUser]) -> Void
-typealias PostsResponseHandler = (_ objectsPosts: AllPost?) -> Void
+typealias PostsResponseHandler = (_ objectsPosts: [AllPost]?) -> Void
 
 import Foundation
 import Alamofire
@@ -35,14 +35,12 @@ struct UserFetch {
         let url = "https://jsonplaceholder.typicode.com/users/\(idUser)/posts"
         
         AF.request(url, method: .get).response { response in
-            response.data?.printLog()
-            guard let objPost = response.data?.toDTO(AllPost.self) else {
+            guard let objPost = response.data?.toDTO([AllPost].self) else {
                 completionHandler(nil)
                 //Una logica de errores
                 return
             }
             completionHandler(objPost)
-            print(objPost)
         }
     }
 }

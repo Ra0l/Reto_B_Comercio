@@ -7,6 +7,7 @@
 
 import Foundation
 import ProgressHUD
+import UIKit
 
 struct UserPresenter {
     
@@ -29,6 +30,14 @@ struct UserPresenter {
     func didLoad() {
         self.controller?.initAdapters()
         self.listAll()
+    }
+    
+    func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let controller = segue.destination as? PostViewController, let objPots = sender as? AllUser {
+            controller.idUser = objPots.id
+            controller.nameUser = objPots.name
+        }
     }
 }
 

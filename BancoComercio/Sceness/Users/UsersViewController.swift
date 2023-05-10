@@ -27,6 +27,10 @@ class UsersViewController: UIViewController, ListUsersAdapterViewController {
         self.presenter.didLoad()
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        self.presenter.prepare(for: segue, sender: sender)
+    }
+    
 }
 
 
@@ -38,7 +42,7 @@ extension UsersViewController {
     
     
     func didSelectUser(_ objUser: AllUser) {
-        
+        self.performSegue(withIdentifier: "PostViewController", sender: objUser)
     }
     
     func reloadData(_ arrayData: [Any]) {
