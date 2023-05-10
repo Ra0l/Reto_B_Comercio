@@ -22,8 +22,9 @@
 		F73847B42A0AD3190059409D /* Data+DTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73847B32A0AD3190059409D /* Data+DTO.swift */; };
 		F73847B62A0AD66C0059409D /* UserPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73847B52A0AD66C0059409D /* UserPresenter.swift */; };
 		F73847B92A0AD9790059409D /* UserAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F73847B82A0AD9790059409D /* UserAdapter.swift */; };
+		F7713CF52A0BDD6B0043D8BE /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7713CF32A0BDD6B0043D8BE /* UserTableViewCell.swift */; };
+		F7713CF62A0BDD6B0043D8BE /* UserTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7713CF42A0BDD6B0043D8BE /* UserTableViewCell.xib */; };
 		F78F5CA62A0AE2B000053F86 /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = F78F5CA52A0AE2B000053F86 /* ProgressHUD */; };
-		F78F5CA82A0AE32B00053F86 /* UserTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F78F5CA72A0AE32B00053F86 /* UserTableViewCell.swift */; };
 		F7C9530D2A097A7A00B18570 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C9530C2A097A7A00B18570 /* AppDelegate.swift */; };
 		F7C9530F2A097A7A00B18570 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C9530E2A097A7A00B18570 /* SceneDelegate.swift */; };
 		F7C953112A097A7A00B18570 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7C953102A097A7A00B18570 /* ViewController.swift */; };
@@ -121,7 +122,8 @@
 		F73847B32A0AD3190059409D /* Data+DTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+DTO.swift"; sourceTree = "<group>"; };
 		F73847B52A0AD66C0059409D /* UserPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserPresenter.swift; sourceTree = "<group>"; };
 		F73847B82A0AD9790059409D /* UserAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAdapter.swift; sourceTree = "<group>"; };
-		F78F5CA72A0AE32B00053F86 /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		F7713CF32A0BDD6B0043D8BE /* UserTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserTableViewCell.swift; sourceTree = "<group>"; };
+		F7713CF42A0BDD6B0043D8BE /* UserTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UserTableViewCell.xib; sourceTree = "<group>"; };
 		F7C953092A097A7A00B18570 /* BancoComercio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BancoComercio.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7C9530C2A097A7A00B18570 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F7C9530E2A097A7A00B18570 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -195,11 +197,11 @@
 		F738479C2A0AC8F30059409D /* Users */ = {
 			isa = PBXGroup;
 			children = (
+				F7713CF22A0BDD490043D8BE /* CustomView */,
 				F73847B72A0AD9690059409D /* Adapter */,
 				F73847B52A0AD66C0059409D /* UserPresenter.swift */,
 				F738479D2A0AC9090059409D /* UsersViewController.swift */,
 				F738479F2A0AC9240059409D /* Users.storyboard */,
-				F78F5CA72A0AE32B00053F86 /* UserTableViewCell.swift */,
 			);
 			path = Users;
 			sourceTree = "<group>";
@@ -248,6 +250,15 @@
 				F73847B82A0AD9790059409D /* UserAdapter.swift */,
 			);
 			path = Adapter;
+			sourceTree = "<group>";
+		};
+		F7713CF22A0BDD490043D8BE /* CustomView */ = {
+			isa = PBXGroup;
+			children = (
+				F7713CF32A0BDD6B0043D8BE /* UserTableViewCell.swift */,
+				F7713CF42A0BDD6B0043D8BE /* UserTableViewCell.xib */,
+			);
+			path = CustomView;
 			sourceTree = "<group>";
 		};
 		F7C953002A097A7A00B18570 = {
@@ -542,6 +553,7 @@
 				F7C953972A099A8500B18570 /* Roboto-Light.ttf in Resources */,
 				F7C953162A097A7C00B18570 /* Assets.xcassets in Resources */,
 				F7C953942A099A8500B18570 /* Roboto-Black.ttf in Resources */,
+				F7713CF62A0BDD6B0043D8BE /* UserTableViewCell.xib in Resources */,
 				F7C953142A097A7A00B18570 /* Main.storyboard in Resources */,
 				F7C953932A099A8500B18570 /* Roboto-ThinItalic.ttf in Resources */,
 			);
@@ -582,12 +594,12 @@
 				F7C953582A09995800B18570 /* PasswordTextField.swift in Sources */,
 				F7C9530F2A097A7A00B18570 /* SceneDelegate.swift in Sources */,
 				F73847AD2A0AD0000059409D /* UserResponse.swift in Sources */,
-				F78F5CA82A0AE32B00053F86 /* UserTableViewCell.swift in Sources */,
 				F7C953612A09995900B18570 /* UserTextField.swift in Sources */,
 				F7C953522A09995800B18570 /* AMButton.swift in Sources */,
 				F7C953672A09995900B18570 /* AMShape.swift in Sources */,
 				F7C9535B2A09995900B18570 /* GenericTextField.swift in Sources */,
 				F7348FF02A09B02F0012A14E /* LoginModel.swift in Sources */,
+				F7713CF52A0BDD6B0043D8BE /* UserTableViewCell.swift in Sources */,
 				F73847AB2A0ACE5A0059409D /* AllPost.swift in Sources */,
 				F73847B62A0AD66C0059409D /* UserPresenter.swift in Sources */,
 				F7C9537A2A0999B500B18570 /* LoginViewController.swift in Sources */,

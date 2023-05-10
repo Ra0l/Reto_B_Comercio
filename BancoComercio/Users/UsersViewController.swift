@@ -23,7 +23,7 @@ class UsersViewController: UIViewController, ListUsersAdapterViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.tlbUsers.register(UINib(nibName: "UserTableViewCell", bundle: nil), forCellReuseIdentifier: "UserTableViewCell")
         self.presenter.didLoad()
     }
     

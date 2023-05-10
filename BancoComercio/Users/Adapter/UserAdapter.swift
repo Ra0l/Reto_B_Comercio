@@ -52,13 +52,5 @@ extension UserAdapter: UITableViewDelegate {
         }
     }
 
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        if self.arrayData[indexPath.row] is AllUser {
-            return UITableView.automaticDimension
-        } else if self.arrayData[indexPath.row] is String {
-            return tableView.frame.height
-        } else {
-            return 0
-        }
-    }
+
 }
